@@ -41,7 +41,7 @@ export const About = () => {
             <span className="gradient-text block">Innovation & Learning</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            The first Tinkerer Lab in Karnataka, bridging the gap between theoretical knowledge 
+            The first "Tinkerer Lab" in Karnataka, bridging the gap between theoretical knowledge 
             and practical applications through cutting-edge technology and collaborative innovation.
           </p>
         </div>
@@ -57,11 +57,11 @@ export const About = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                To create an ecosystem that nurtures innovation, technical excellence, and entrepreneurial 
-                mindset among students through hands-on learning experiences.
+                To foster interdisciplinary collaboration and bridge academics with industry.We empower students through project-based learning, research, and entrepreneurship.
+                Our hub drives innovation via LEAP programs, workshops, hackathons, and challenges.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                We develop problem-solvers who can address real-world challenges through technology and creative thinking.
+                Empowering innovation by bridging academia, industry, and entrepreneurship.
               </p>
             </div>
           </div>
@@ -75,11 +75,11 @@ export const About = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                To establish ALPHA Lab as a center of excellence that produces industry-ready professionals 
-                and innovative solutions with societal impact.
+                Our mission is to provide students with state-of-the-art facilities and hands-on opportunities in high-performance computing, prototyping and real-world problem solving.
+                We strive to design thinking and technical excellence while encouraging creativity and exploration.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Becoming a model for educational institutions across India in reimagining technology education.
+                Transforming ideas into market-ready solutions through innovation and collaboration.
               </p>
             </div>
           </div>

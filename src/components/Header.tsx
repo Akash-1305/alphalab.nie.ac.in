@@ -42,16 +42,15 @@ export const Header = () => {
           <a href="#" className="flex items-center space-x-3 group">
             <div className="relative">
               <img 
-                src="/image.png" 
-                alt="ALPHA Lab" 
-                className="h-12 w-auto rounded-2xl transition-transform duration-300 group-hover:scale-105" 
+                src="https://i.postimg.cc/vBsp2N9f/ALPHA-LOGO.png" 
+                alt="ALPHA Twin Lab" 
+                className="h-12 w-auto transition-transform duration-300 group-hover:scale-105" 
               />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className={`font-bold text-xl transition-colors duration-300 ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}>
-              ALPHA Lab
+              ALPHA Twin Lab
             </div>
           </a>
           

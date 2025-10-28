@@ -40,7 +40,7 @@ export const Contact = () => {
                   <Mail className="h-6 w-6 mr-3" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-blue-100">alpha.lab@nie.ac.in</p>
+                    <p className="text-blue-100">alphatinkererslab@nie.ac.in</p>
                   </div>
                 </div>
               </div>

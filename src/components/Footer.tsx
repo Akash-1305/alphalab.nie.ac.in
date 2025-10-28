@@ -25,11 +25,10 @@ export const Footer = () => {
               <div className="flex items-center space-x-3 mb-6">
                 <div className="relative">
                   <img 
-                    src="/image.png" 
-                    alt="ALPHA Lab" 
-                    className="h-12 w-auto rounded-2xl" 
+                    src="https://i.postimg.cc/vBsp2N9f/ALPHA-LOGO.png" 
+                    alt="ALPHA Twin Lab" 
+                    className="h-12 w-auto" 
                   />
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/20 to-indigo-500/20"></div>
                 </div>
                 <div className="font-bold text-xl">ALPHA Lab</div>
               </div>
@@ -42,7 +41,7 @@ export const Footer = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-blue-200">
                   <MapPin className="w-4 h-4 mr-3 text-blue-400" />
-                  <span className="text-sm">NIE Mysore, Karnataka, India</span>
+                  <span className="text-sm">NIE Mysuru, Karnataka, India</span>
                 </div>
                 <div className="flex items-center text-blue-200">
                   <Phone className="w-4 h-4 mr-3 text-blue-400" />
@@ -50,17 +49,15 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center text-blue-200">
                   <Mail className="w-4 h-4 mr-3 text-blue-400" />
-                  <span className="text-sm">alpha@nie.ac.in</span>
+                  <span className="text-sm">alphatinkererslab@nie.ac.in</span>
                 </div>
               </div>
               
               {/* Social Links */}
               <div className="flex space-x-4">
                 {[
-                  { icon: Facebook, href: "#", label: "Facebook" },
-                  { icon: Twitter, href: "#", label: "Twitter" },
-                  { icon: Linkedin, href: "#", label: "LinkedIn" },
-                  { icon: Instagram, href: "#", label: "Instagram" }
+                  { icon: Linkedin, href: "https://www.linkedin.com/company/alpha-innovation-and-tinkerers-lab/", label: "LinkedIn" },
+                  { icon: Instagram, href: "https://www.instagram.com/aitl_nie_mysuru?igsh=bHc5MzRtaWZ6am05", label: "Instagram" }
                 ].map((social, index) => (
                   <a
                     key={index}

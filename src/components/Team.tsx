@@ -1,54 +1,45 @@
-import { Linkedin, Twitter, Mail, Users as UsersIcon, Award, Target } from 'lucide-react';
+import { Linkedin, Mail, Users as UsersIcon, Award, Target } from 'lucide-react';
 
 export const Team = () => {
   const team = [
     {
-      name: 'Dr. Rajesh Kumar',
-      role: 'Lab Director',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-      bio: 'Leading innovation in hardware design and embedded systems with 15+ years of experience in academia and industry.',
+      name: 'Dr.Rohini Nagapadma',
+      role: 'Prinicipal-NIE',
+      role1: 'Patron-ALPHA',
+      image: 'https://i.postimg.cc/J4DmVWSp/Dr-Rohini-Nagapadma.jpg',
+      bio: 'Provides visionary leadership and strategic direction to ALPHA Lab. As the patron of ALPHA, she plays a key role in enabling institutional support for student-led initiatives and fostering a culture of innovation at NIE, Mysuru.',
       social: {
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/dr-rohini-nagapadma-162b301a5/',
         twitter: '#',
-        email: 'director@alphalab.nie.ac.in'
+        email: 'principal@nie.ac.in'
       },
       achievements: ['PhD in Electronics', '50+ Research Papers', 'IEEE Fellow']
     },
     {
-      name: 'Prof. Priya Sharma',
-      role: 'Technical Lead',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
-      bio: 'Specialist in IoT, robotics, and AI with a passion for mentoring the next generation of innovators.',
+      name: 'Dr.Likith Kumar M V',
+      role: 'Associate Professor, Dept. of EEE',
+      role1: 'Strategic Advisor & Professor-In-Charge',
+      image: 'https://i.postimg.cc/s1dZP4tS/Generated-Image-September-04-2025-3-25-PM.jpg',
+      bio: 'Associate Professor at NIE, Mysuru. With a strong focus on quality and academic excellence, Dr.Likith kumar M V ensures ALPHA aligns with NIE’s educational objectives.His mentorship helps bridge innovation with institutional standards and continuos improvement.',
       social: {
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/likith-kumar-m-v-a232aa12a/',
         twitter: '#',
-        email: 'tech@alphalab.nie.ac.in'
+        email: 'likith@nie.ac.in'
       },
       achievements: ['M.Tech in Robotics', 'Google Developer Expert', '30+ Patents']
     },
     {
-      name: 'Mr. Arjun Patel',
-      role: 'Industry Liaison',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
-      bio: 'Bridging academia and industry, facilitating partnerships that drive real-world innovation and impact.',
+      name: 'Mr. Balaji Vijaykumar',
+      role: 'Assistant Professor, Dept. of CSE-AI&ML',
+      role1: 'Professor-In-Charge & Head',
+      image: 'https://i.postimg.cc/436frn2Y/Mr-Balaji-vijaykumar.jpg',
+      bio: 'Assistant Professor at NIE, Mysuru. Holds a B.E. from NIE and an M.E. from SJCE. Head of ALPHA Twin Labs and focuses on industry–academia collaboration, software systems, and mentoring startups.',
       social: {
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/balaji-vijaykumar/',
         twitter: '#',
-        email: 'liaison@alphalab.nie.ac.in'
+        email: 'balajiv@nie.ac.in'
       },
-      achievements: ['MBA Strategy', '100+ Partnerships', 'Startup Mentor']
-    },
-    {
-      name: 'Dr. Sneha Reddy',
-      role: 'Research Coordinator',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
-      bio: 'Coordinating cutting-edge research initiatives and fostering collaborative innovation across disciplines.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        email: 'research@alphalab.nie.ac.in'
-      },
-      achievements: ['PhD in Computer Science', 'TED Speaker', '20+ Awards']
+      achievements: ['Software Engineer at Ex-Philips R&D & Ex-Accenture','Associate Member — TiE Mysuru & CII Karnataka']
     }
   ];
 
@@ -72,7 +63,7 @@ export const Team = () => {
         </div>
         
         {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {team.map((member, index) => (
             <div 
               key={index} 
@@ -98,13 +89,6 @@ export const Team = () => {
                       <Linkedin className="h-5 w-5" />
                     </a>
                     <a 
-                      href={member.social.twitter} 
-                      className="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-700 hover:text-blue-400 transition-colors shadow-lg"
-                      aria-label={`${member.name}'s Twitter`}
-                    >
-                      <Twitter className="h-5 w-5" />
-                    </a>
-                    <a 
                       href={`mailto:${member.social.email}`} 
                       className="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-700 hover:text-red-500 transition-colors shadow-lg"
                       aria-label={`Email ${member.name}`}
@@ -121,6 +105,9 @@ export const Team = () => {
                   </h3>
                   <p className="text-blue-600 font-semibold mb-3 text-sm uppercase tracking-wide">
                     {member.role}
+                  </p>
+                  <p className="text-blue-500 font-semibold mb-3 text-sm uppercase tracking-wide">
+                    {member.role1}
                   </p>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     {member.bio}
