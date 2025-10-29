@@ -26,7 +26,7 @@ export const Contact = () => {
                     <p className="text-blue-100">No 50, Koorgalli Village</p>
                     <p className="text-blue-100">Hootagalli Industrial Area</p>
                     <p className="text-blue-100">Next to BEML, Mysuru</p>
-                    <p className="text-blue-100">Karnataka 570018</p>
+                    <p className="text-blue-100">Karnataka 571130</p>
                   </div>
                 </div>
                 <div className="flex items-center">

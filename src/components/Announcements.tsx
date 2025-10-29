@@ -37,10 +37,22 @@ export const Announcements = () => {
             </div>
           </div>
 
-          {/* Announcement Card */}
-          <div className="relative overflow-hidden">
-            <div className="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 rounded-3xl shadow-2xl min-h-[280px] relative overflow-hidden">
-              {/* Background decorative elements */}
+          {/* Card Wrapper (with outside arrows) */}
+          <div className="flex items-center justify-center space-x-6">
+            {/* Left Arrow (outside) */}
+            {announcements.length > 1 && (
+              <button
+                onClick={prevAnnouncement}
+                className="bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+                aria-label="Previous announcement"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+            )}
+
+            {/* Announcement Card */}
+            <div className="relative flex-1 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 rounded-3xl shadow-2xl min-h-[280px] overflow-hidden">
+              {/* Decorative background elements */}
               <div className="absolute inset-0">
                 <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
                 <div className="absolute bottom-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
@@ -54,13 +66,15 @@ export const Announcements = () => {
                       <span className="glass-morphism text-white text-sm font-semibold px-4 py-2 rounded-xl mb-3 sm:mb-0 self-start">
                         {currentAnnouncement.badge}
                       </span>
-                      <span className="text-white/80 text-sm sm:ml-4 font-medium">{currentAnnouncement.date}</span>
+                      <span className="text-white/80 text-sm sm:ml-4 font-medium">
+                        {currentAnnouncement.date}
+                      </span>
                     </div>
-                    
+
                     <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 leading-tight">
                       {currentAnnouncement.title}
                     </h3>
-                    
+
                     <p className="text-blue-100 text-lg leading-relaxed max-w-3xl">
                       {currentAnnouncement.description}
                     </p>
@@ -68,29 +82,19 @@ export const Announcements = () => {
                 </div>
               </div>
             </div>
-            
-            {/* Navigation Buttons */}
+
+            {/* Right Arrow (outside) */}
             {announcements.length > 1 && (
-              <>
-                <button
-                  onClick={prevAnnouncement}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/95 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-20"
-                  aria-label="Previous announcement"
-                >
-                  <ChevronLeft className="h-5 w-5" />
-                </button>
-                
-                <button
-                  onClick={nextAnnouncement}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/95 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-20"
-                  aria-label="Next announcement"
-                >
-                  <ChevronRight className="h-5 w-5" />
-                </button>
-              </>
+              <button
+                onClick={nextAnnouncement}
+                className="bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+                aria-label="Next announcement"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
             )}
           </div>
-          
+
           {/* Carousel Indicators */}
           {announcements.length > 1 && (
             <div className="flex justify-center mt-8 space-x-3">
@@ -99,8 +103,8 @@ export const Announcements = () => {
                   key={index}
                   onClick={() => setCurrentAnnouncementIndex(index)}
                   className={`transition-all duration-300 rounded-full ${
-                    index === currentAnnouncementIndex 
-                      ? 'w-8 h-3 bg-blue-500' 
+                    index === currentAnnouncementIndex
+                      ? 'w-8 h-3 bg-blue-500'
                       : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
                   }`}
                   aria-label={`Go to announcement ${index + 1}`}

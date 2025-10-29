@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ChevronRight, ChevronLeft, ExternalLink, Github, Lightbulb } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Lightbulb } from 'lucide-react';
 import { projects } from '../data/projects';
 
 export const Projects = () => {

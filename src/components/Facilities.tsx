@@ -124,32 +124,6 @@ export const Facilities = () => {
             ))}
           </div>
         </div>
-        
-        {/* Navigation */}
-        <div className="flex justify-center mt-16 space-x-4">
-          <button 
-            className="group bg-white hover:bg-blue-50 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
-            onClick={() => {
-              const currentIndex = facilities.findIndex(f => f.id === activeTab);
-              const prevIndex = (currentIndex - 1 + facilities.length) % facilities.length;
-              setActiveTab(facilities[prevIndex].id);
-            }}
-            aria-label="Previous category"
-          >
-            <ChevronLeft className="h-6 w-6 text-gray-600 group-hover:text-blue-600 transition-colors" />
-          </button>
-          <button 
-            className="group bg-white hover:bg-blue-50 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
-            onClick={() => {
-              const currentIndex = facilities.findIndex(f => f.id === activeTab);
-              const nextIndex = (currentIndex + 1) % facilities.length;
-              setActiveTab(facilities[nextIndex].id);
-            }}
-            aria-label="Next category"
-          >
-            <ChevronRight className="h-6 w-6 text-gray-600 group-hover:text-blue-600 transition-colors" />
-          </button>
-        </div>
       </div>
     </section>
   );
